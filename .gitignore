@@ -1,0 +1,15 @@
+node_modules/
+playwright-report/
+test-results/
+*.log
+*.pid
+*.tmp
+status.json
+runtime.json
+install-state.json*
+last-operation.json
+*.bak
+work/
+private-archive/
+.env*
+config.json

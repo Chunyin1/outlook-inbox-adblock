@@ -1,0 +1,19 @@
+{
+  "name": "outlook-inbox-adblock",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reversible hosts and cosmetic filtering for new Outlook on Windows",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File tests/windows.ps1",
+    "check": "node --check src/cosmetic/filter.js && node --check src/cosmetic/helper.cjs && node --check src/cosmetic/connection.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "prettier": "3.9.10"
+  }
+}
